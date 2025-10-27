@@ -1,0 +1,8 @@
+streamlit
+jieba
+wordcloud
+matplotlib
+rank_bm25
+udicOpenData
+pandas
+numpy
