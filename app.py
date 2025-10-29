@@ -43,9 +43,7 @@ st.header("自訂詞典與過濾字")
 # 初始化 session state
 if "custom_dict" not in st.session_state:
     st.session_state.custom_dict = pd.DataFrame([
-
-        {"word": "高虹安", "weight": 20},
-"""
+        
         # 政黨
         {"word": "民眾黨", "weight": 10},
         {"word": "民進黨", "weight": 10},
@@ -71,27 +69,27 @@ if "custom_dict" not in st.session_state:
         {"word": "蔡英文", "weight": 10},
 
         # 地名/機構
-        {"word": "新竹市", "weight": 8},
-        {"word": "資策會", "weight": 8},
-        {"word": "交大", "weight": 8},
-        {"word": "清大", "weight": 8},
-        {"word": "竹科", "weight": 8},
-        {"word": "台積電", "weight": 8},
-        {"word": "聯發科", "weight": 8},
+        {"word": "新竹市", "weight": 7},
+        {"word": "資策會", "weight": 7},
+        {"word": "交大", "weight": 7},
+        {"word": "清大", "weight": 7},
+        {"word": "竹科", "weight": 7},
+        {"word": "台積電", "weight": 7},
+        {"word": "聯發科", "weight": 7},
 
         # 議題/其他
-        {"word": "投票", "weight": 10},
-        {"word": "助理費", "weight": 10},
-        {"word": "論文門", "weight": 10},
-        {"word": "塔綠班", "weight": 10},
-        {"word": "公投", "weight": 10},
-        {"word": "選舉", "weight": 10},
-        {"word": "罷免", "weight": 10},
-        {"word": "立委", "weight": 10},
-        {"word": "市長", "weight": 10},
-        {"word": "議員", "weight": 10},
-        {"word": "助理", "weight": 10},
-"""       
+        {"word": "投票", "weight": 8},
+        {"word": "助理費", "weight": 8},
+        {"word": "論文門", "weight": 8},
+        {"word": "塔綠班", "weight": 5},
+        {"word": "公投", "weight": 8},
+        {"word": "選舉", "weight": 8},
+        {"word": "罷免", "weight": 8},
+        {"word": "立委", "weight": 5},
+        {"word": "市長", "weight": 5},
+        {"word": "議員", "weight": 5},
+        {"word": "助理", "weight": 5},
+        
     ])
 
 if "ignore_dict" not in st.session_state:
