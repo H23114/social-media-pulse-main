@@ -95,7 +95,7 @@ if "custom_dict" not in st.session_state:
 if "ignore_dict" not in st.session_state:
     st.session_state.ignore_dict = pd.DataFrame(
         [{"word": w} for w in [
-"""           
+            
             # 助詞/介詞
             "的", "了", "呢", "嗎", "得", "地", "著",
             
@@ -110,9 +110,8 @@ if "ignore_dict" not in st.session_state:
 
             # 英文
             "Sent", "from", "my", "on", "news", "gur"
-"""
-    ]]
-    )
+            
+    ]])
 
 # 編輯表格（可新增、刪除、修改）
 st.subheader("自訂關鍵詞與權重")
