@@ -43,6 +43,8 @@ st.header("自訂詞典與過濾字")
 # 初始化 session state
 if "custom_dict" not in st.session_state:
     st.session_state.custom_dict = pd.DataFrame([
+
+        {"word": "高虹安", "weight": 20}
 """
         # 政黨
         {"word": "民眾黨", "weight": 10},
@@ -109,9 +111,9 @@ if "ignore_dict" not in st.session_state:
             "是", "在", "有", "沒有", "也", "不", "不是", "是不是", "已經", "很", "都",  "就", "而", "但", "要", "為", "說",
 
             # 英文
-            "Sent", "from", "my", "on", "news", "gur"]
+            "Sent", "from", "my", "on", "news", "gur"
 """
-            ]
+    ]]
     )
 
 # 編輯表格（可新增、刪除、修改）
