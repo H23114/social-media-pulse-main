@@ -44,7 +44,7 @@ st.header("自訂詞典與過濾字")
 if "custom_dict" not in st.session_state:
     st.session_state.custom_dict = pd.DataFrame([
 
-        {"word": "高虹安", "weight": 20}
+        {"word": "高虹安", "weight": 20},
 """
         # 政黨
         {"word": "民眾黨", "weight": 10},
