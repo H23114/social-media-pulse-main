@@ -43,7 +43,7 @@ st.header("自訂詞典與過濾字")
 # 初始化 session state
 if "custom_dict" not in st.session_state:
     st.session_state.custom_dict = pd.DataFrame([
-
+"""
         # 政黨
         {"word": "民眾黨", "weight": 10},
         {"word": "民進黨", "weight": 10},
@@ -89,13 +89,13 @@ if "custom_dict" not in st.session_state:
         {"word": "市長", "weight": 10},
         {"word": "議員", "weight": 10},
         {"word": "助理", "weight": 10},
-       
+"""       
     ])
 
 if "ignore_dict" not in st.session_state:
     st.session_state.ignore_dict = pd.DataFrame(
         [{"word": w} for w in [
-            
+"""           
             # 助詞/介詞
             "的", "了", "呢", "嗎", "得", "地", "著",
             
@@ -109,7 +109,9 @@ if "ignore_dict" not in st.session_state:
             "是", "在", "有", "沒有", "也", "不", "不是", "是不是", "已經", "很", "都",  "就", "而", "但", "要", "為", "說",
 
             # 英文
-            "Sent", "from", "my", "on", "news", "gur"]]
+            "Sent", "from", "my", "on", "news", "gur"]
+"""
+            ]
     )
 
 # 編輯表格（可新增、刪除、修改）
